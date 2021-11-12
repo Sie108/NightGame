@@ -24,6 +24,11 @@ public class PlayerController : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * horizontalInput);
 
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            anim.SetTrigger("idle");
+        }
+
         //Flips the character
         Vector3 characterScale = transform.localScale;
         if (Input.GetAxis("Horizontal") < 0)
