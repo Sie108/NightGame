@@ -15,8 +15,20 @@ public class PlayerController : MonoBehaviour
     }
 
     // Keeps player in the boudries of the game
+
     void Update()
     {
+        if (transform.position.x < -xRange)
+        {
+            transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
+        }
+
+        if (transform.position.x > xRange)
+        {
+            transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
+        }
+        
+        
         if(Input.GetKeyDown(KeyCode.Space)){
             anim.SetTrigger("slice");
         }
