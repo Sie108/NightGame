@@ -5,15 +5,15 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public GameObject[] enemies;
-    public TextMeshProUGUI gameOverText;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
     public void GameOver() {
-        gameOverText.gameObject.SetActive(true);
+       
     }
     
 

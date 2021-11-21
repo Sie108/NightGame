@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     public float horizontalInput;
-    public float speed = 90.0f;
-    public float xRange = 10;
+    private float speed = 500;
+    public float xRange = 900;
     private Animator anim;
     // Start is called before the first frame update
     void Start()
@@ -34,7 +32,7 @@ public class PlayerController : MonoBehaviour
         }
         // Allows the character to move left and right
         horizontalInput = Input.GetAxis("Horizontal");
-        transform.Translate(Vector3.right * horizontalInput);
+        transform.Translate(Vector3.right * horizontalInput * speed * Time.deltaTime);
 
         if (Input.GetKeyUp(KeyCode.Space))
         {
