@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -292,6 +293,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Galaxy3 - Copy_6: -7264791093120152506
+      Galaxy3 - Copy_0: 6591933215431755432
+      Galaxy3 - Copy_7: -2760730107492980722
+      Galaxy3 - Copy_1: 4332411077234061220
+      Galaxy3 - Copy_2: 7690960603957356007
+      Galaxy3 - Copy_3: 74405032569615937
+      Galaxy3 - Copy_5: 4562491392256244370
+      Galaxy3 - Copy_4: 9076998273307783467
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
