@@ -29,8 +29,7 @@ public class PlayerController : MonoBehaviour
         
         
         
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
+        if(Input.GetKeyDown(KeyCode.Space)){
             anim.SetTrigger("slice");
         }
         // Allows the character to move left and right
