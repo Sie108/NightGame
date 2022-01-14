@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class TriggerEventsBehaviour : MonoBehaviour
 {
- public UnityEvent triggerEnterEvent, triggerEnterRepeatEvent, triggerEnterEndEvent, triggerExitEvent;
+ public UnityEvent triggerEnterEvent, triggerEnterRepeatEvent, triggerEnterEndEvent, triggerExitEvent, triggerEnterMoveEvent;
  public float delayTime = 0.01f;
  private WaitForSeconds waitObj;
  public bool canRepeat;
@@ -34,8 +34,14 @@ public class TriggerEventsBehaviour : MonoBehaviour
   triggerEnterEndEvent.Invoke();
   }
  
- private void OnTriggerExit(Collider other)
+ private void OnMouseDown()
   {
     triggerExitEvent.Invoke();
   }
-}
+  private void OnMouseUp()
+  {
+    triggerEnterMoveEvent.Invoke();
+    
+  }
+  
+ }
